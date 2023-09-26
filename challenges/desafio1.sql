@@ -40,6 +40,7 @@ CREATE TABLE IF NOT EXISTS following(
     artist_id INT, FOREIGN KEY (artist_id) REFERENCES artist(artist_id),
     PRIMARY KEY (user_id, artist_id)
 ) ENGINE = InnoDB;
+
 INSERT INTO plans (type, price)
 VALUES
     ('gratuito', 0),
