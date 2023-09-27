@@ -5,7 +5,7 @@ FROM
 LEFT JOIN
 	SpotifyClone.playback p ON s.song_id = p.song_id
 GROUP BY
-	s.song_name
+	cancao
 ORDER BY
-	reproducoes DESC
+	reproducoes DESC, cancao
 LIMIT 2;
