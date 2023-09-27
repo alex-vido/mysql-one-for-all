@@ -8,4 +8,4 @@ LEFT JOIN
 GROUP BY
 	u.user_name
 ORDER BY
-	user_name;
+	u.user_name;
